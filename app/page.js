@@ -11,23 +11,26 @@ import CTASection from "../components/CTASection";
 import ContactSection from "../components/ContactSection";
 import Footer from "../components/Footer";
 import MobileActionBar from "../components/MobileActionBar";
+import SmoothScroll from "../components/SmoothScroll";
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-nandi-ivory relative selection:bg-nandi-burgundy selection:text-nandi-ivory pb-[70px] md:pb-0">
-      <Navbar />
-      <Hero />
-      <BrandIntro />
-      <Occasions />
-      <MenuSection />
-      <WhyNandi />
-      <Gallery />
-      <Testimonials />
-      <Process />
-      <CTASection />
-      <ContactSection />
-      <Footer />
-      <MobileActionBar />
-    </main>
+    <SmoothScroll>
+      <main className="min-h-screen bg-nandi-ivory relative selection:bg-nandi-burgundy selection:text-nandi-ivory pb-[70px] md:pb-0">
+        <Navbar />
+        <Hero />
+        <BrandIntro />
+        <Occasions />
+        <MenuSection />
+        <WhyNandi />
+        <Gallery />
+        <Testimonials />
+        <Process />
+        <CTASection />
+        <ContactSection />
+        <Footer />
+        <MobileActionBar />
+      </main>
+    </SmoothScroll>
   );
 }

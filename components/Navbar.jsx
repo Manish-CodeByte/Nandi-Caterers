@@ -38,9 +38,9 @@ export default function Navbar() {
 
   return (
     <header
-      className={`sticky top-0 z-[1000] w-full transition-all duration-300 ${
+      className={`sticky top-0 z-[1000] w-full transition-all duration-500 ease-in-out ${
         isScrolled
-          ? "bg-nandi-ivory/95 backdrop-blur-md shadow-[0_4px_12px_rgba(0,0,0,0.08)] border-b border-nandi-gold/20"
+          ? "bg-nandi-ivory/95 backdrop-blur-md shadow-[0_4px_16px_rgba(0,0,0,0.06)] border-b border-nandi-gold/25"
           : "bg-transparent border-b border-transparent"
       }`}
       style={{ height: "80px" }}
