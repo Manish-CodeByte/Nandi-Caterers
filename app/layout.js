@@ -16,7 +16,7 @@ const inter = Inter({
 });
 
 export const metadata = {
-  title: "Nandi Caterers | Premium Catering in Mangalore",
+  title: "Nandi Caterers | Traditional Catering",
   description:
     "Premium catering services for weddings, celebrations, and corporate events in Mangalore. Authentic flavours, professional service, unforgettable occasions.",
   keywords: [
@@ -35,8 +35,21 @@ export const metadata = {
   alternates: {
     canonical: "https://nandicaterers.com",
   },
+  icons: {
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/icon.svg", type: "image/svg+xml" },
+      { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+      { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
+    ],
+    shortcut: "/favicon.ico",
+    apple: [
+      { url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" },
+    ],
+  },
+  manifest: "/site.webmanifest",
   openGraph: {
-    title: "Nandi Caterers | Premium Catering in Mangalore",
+    title: "Nandi Caterers | Traditional Catering",
     description:
       "Premium catering for weddings, celebrations, and corporate events in Mangalore. Authentic flavours, professional service, unforgettable occasions.",
     url: "https://nandicaterers.com",
@@ -54,7 +67,7 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Nandi Caterers | Premium Catering in Mangalore",
+    title: "Nandi Caterers | Traditional Catering",
     description: "Premium catering for weddings and celebrations across Mangalore.",
     images: [
       "https://images.unsplash.com/photo-1589302168068-964664d93dc0?auto=format&fit=crop&w=1200&q=80",
@@ -94,6 +107,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${cormorant.variable} ${inter.variable}`}>
       <head>
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel="icon" href="/icon.svg" type="image/svg+xml" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
