@@ -53,7 +53,7 @@ export default function Navbar() {
           aria-label="Nandi Caterers Home"
         >
           <div className="transform transition-transform duration-300 group-hover:scale-105 shrink-0">
-            <NandiEmblem size={36} showGlow={true} />
+            <NandiEmblem size={42} showGlow={true} />
           </div>
           <div className="flex flex-col">
             <span className="font-serif text-[19px] sm:text-[22px] md:text-[24px] font-bold tracking-tight text-nandi-burgundy leading-none">

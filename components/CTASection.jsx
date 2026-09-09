@@ -17,7 +17,7 @@ export default function CTASection() {
 
       <div className="max-w-nandi mx-auto px-4 sm:px-6 md:px-10 text-center relative z-10">
         <div className="inline-block mb-3 sm:mb-4">
-          <NandiEmblem size={36} showGlow={true} />
+          <NandiEmblem size={56} showGlow={true} />
         </div>
 
         <h2 className="font-serif fluid-h1 font-bold text-nandi-charcoal max-w-4xl mx-auto mb-4 sm:mb-6">

@@ -1,11 +1,13 @@
 "use client";
 
 import React from "react";
+import Image from "next/image";
 
 /**
  * NandiEmblem Component
  * The central brand icon of Nandi Caterers:
- * An ornate golden Nandi bull resting regally inside a circular ornamental ring frame.
+ * Renders the official embossed Nandi bull artwork medallion,
+ * or SVG vector when custom color/watermark is requested.
  */
 export default function NandiEmblem({
   size = 40,
@@ -13,7 +15,35 @@ export default function NandiEmblem({
   color,
   opacity = 1,
   showGlow = false,
+  useSvg = false,
 }) {
+  // If not a watermark (no custom color override and not explicitly SVG),
+  // render the authentic official master logo emblem!
+  if (!useSvg && !color) {
+    return (
+      <div
+        className={`inline-flex items-center justify-center relative select-none rounded-full overflow-hidden border border-nandi-gold/60 shadow-sm transition-all duration-300 ${
+          showGlow ? "hover:drop-shadow-[0_0_12px_rgba(201,169,97,0.7)] hover:scale-105" : ""
+        } ${className}`}
+        style={{
+          width: size,
+          height: size,
+          opacity: opacity,
+        }}
+        aria-label="Nandi Caterers Emblem"
+      >
+        <Image
+          src="/images/nandi-logo-circle.png"
+          alt="Nandi Caterers Official Logo"
+          fill
+          sizes={`${size * 2}px`}
+          className="object-cover"
+          priority={size >= 36}
+        />
+      </div>
+    );
+  }
+
   const gradientId = "nandiGoldGradient";
   const strokeColor = color || `url(#${gradientId})`;
   const fillColor = color || `url(#${gradientId})`;
