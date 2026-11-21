@@ -13,8 +13,8 @@ export default function SectionDivider({ className = "", light = false }) {
       />
       <NandiEmblem
         size={24}
-        color="#B89A5A"
-        opacity={0.35}
+        color="#D7A170"
+        opacity={0.5}
         className="transform hover:scale-110 transition-transform duration-300"
       />
       <span

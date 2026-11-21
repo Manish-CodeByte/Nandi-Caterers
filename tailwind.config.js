@@ -9,14 +9,18 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'nandi-ivory': '#FAF7F0',
-        'nandi-cream': '#F3EDE2',
-        'nandi-burgundy': '#641C2D',
-        'nandi-deep-burgundy': '#42121E',
-        'nandi-gold': '#B89A5A',
-        'nandi-gold-light': '#C9A961',
-        'nandi-taupe': '#8D8176',
-        'nandi-charcoal': '#24201E',
+        'nandi-burgundy': '#4B020D',       // Royal Burgundy
+        'nandi-deep-maroon': '#330105',    // Deep Maroon
+        'nandi-deep-burgundy': '#330105',  // Deep Maroon / Burgundy
+        'nandi-maroon': '#330105',         // Deep Maroon
+        'nandi-gold': '#D7A170',           // Antique Gold
+        'nandi-gold-light': '#E8BE96',     // Lighter Antique Gold
+        'nandi-gold-dark': '#B87F4D',      // Deeper Antique Gold
+        'nandi-ivory': '#FCE9CB',          // Warm Ivory (Section Background)
+        'nandi-ivory-light': '#FFF9F0',    // Card Ivory (Cards on Warm Ivory)
+        'nandi-cream': '#F5DDB9',          // Warm Ivory Tint
+        'nandi-taupe': '#6E4A3F',          // Editorial Warm Taupe
+        'nandi-charcoal': '#330105',       // Deep Maroon / High Contrast
       },
       fontFamily: {
         serif: ['var(--font-cormorant)', 'Playfair Display', 'serif'],
@@ -26,10 +30,11 @@ module.exports = {
         'nandi': '1200px',
       },
       boxShadow: {
-        'nandi-subtle': '0 4px 12px rgba(0, 0, 0, 0.08)',
-        'nandi-card': '0 16px 48px rgba(0, 0, 0, 0.08)',
-        'nandi-burgundy': '0 8px 24px rgba(100, 28, 45, 0.2)',
-        'nandi-burgundy-lg': '0 12px 32px rgba(100, 28, 45, 0.25)',
+        'nandi-subtle': '0 4px 12px rgba(51, 1, 5, 0.06)',
+        'nandi-card': '0 16px 48px rgba(75, 2, 13, 0.08)',
+        'nandi-burgundy': '0 8px 24px rgba(75, 2, 13, 0.28)',
+        'nandi-burgundy-lg': '0 12px 32px rgba(75, 2, 13, 0.35)',
+        'nandi-gold': '0 6px 20px rgba(215, 161, 112, 0.35)',
       },
       letterSpacing: {
         'eyebrow': '2px',

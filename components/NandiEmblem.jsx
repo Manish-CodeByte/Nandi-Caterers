@@ -68,10 +68,10 @@ export default function NandiEmblem({
       >
         <defs>
           <linearGradient id={gradientId} x1="0%" y1="0%" x2="100%" y2="100%">
-            <stop offset="0%" stopColor="#D4AF37" />
-            <stop offset="35%" stopColor="#F5E0A3" />
-            <stop offset="65%" stopColor="#B89A5A" />
-            <stop offset="100%" stopColor="#96793A" />
+            <stop offset="0%" stopColor="#F5DDB9" />
+            <stop offset="35%" stopColor="#E8BE96" />
+            <stop offset="65%" stopColor="#D7A170" />
+            <stop offset="100%" stopColor="#B87F4D" />
           </linearGradient>
         </defs>
 

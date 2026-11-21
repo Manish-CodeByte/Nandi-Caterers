@@ -12,17 +12,17 @@ export default function ContactSection() {
   return (
     <section
       id="contact"
-      className="w-full bg-white py-14 sm:py-16 md:py-24 border-t border-nandi-gold/30"
+      className="w-full bg-nandi-ivory py-14 sm:py-16 md:py-24 border-t border-nandi-gold/30"
     >
       <div className="max-w-nandi mx-auto px-4 sm:px-6 md:px-10">
         <div className="max-w-2xl mb-10 sm:mb-12">
           <div className="font-sans text-[11px] sm:text-[12px] font-bold tracking-eyebrow text-nandi-gold uppercase mb-2.5 sm:mb-3">
             Get In Touch
           </div>
-          <h2 className="font-serif fluid-h2 font-bold text-nandi-charcoal mb-3 sm:mb-4">
+          <h2 className="font-serif fluid-h2 font-bold text-nandi-burgundy mb-3 sm:mb-4">
             Let&apos;s Talk About Your Event.
           </h2>
-          <p className="font-sans fluid-body text-nandi-taupe">
+          <p className="font-sans fluid-body text-nandi-charcoal/80">
             Connect directly with our catering directors. No lengthy forms or waiting—we
             are ready to assist you right away.
           </p>
@@ -36,7 +36,7 @@ export default function ContactSection() {
             {/* Brand Emblem & Name */}
             <div>
               <div className="flex items-center gap-3 mb-2">
-                <NandiEmblem size={34} />
+                <NandiEmblem size={38} showGlow={true} />
                 <span className="font-serif text-[24px] sm:text-[28px] font-bold text-nandi-burgundy">
                   {BRAND.name}
                 </span>
@@ -51,14 +51,14 @@ export default function ContactSection() {
             <div className="space-y-4 sm:space-y-5 pt-2">
               {/* Phone 1 */}
               <div className="flex items-center gap-3.5">
-                <div className="w-10 h-10 rounded-full bg-nandi-ivory border border-nandi-gold/30 flex items-center justify-center shrink-0">
+                <div className="w-10 h-10 rounded-full bg-nandi-ivory-light border border-nandi-gold/40 flex items-center justify-center shrink-0">
                   <Phone className="w-4 h-4 text-nandi-gold" />
                 </div>
                 <div>
                   <span className="text-xs text-nandi-taupe block font-sans">Primary Phone</span>
                   <a
                     href={`tel:+91${BRAND.primaryPhone}`}
-                    className="font-sans text-[15px] sm:text-[17px] font-semibold text-nandi-charcoal hover:text-nandi-burgundy transition-colors"
+                    className="font-sans text-[15px] sm:text-[17px] font-bold text-nandi-burgundy hover:text-nandi-deep-maroon transition-colors"
                   >
                     +91 {BRAND.primaryPhone}
                   </a>
@@ -67,14 +67,14 @@ export default function ContactSection() {
 
               {/* Phone 2 */}
               <div className="flex items-center gap-3.5">
-                <div className="w-10 h-10 rounded-full bg-nandi-ivory border border-nandi-gold/30 flex items-center justify-center shrink-0">
+                <div className="w-10 h-10 rounded-full bg-nandi-ivory-light border border-nandi-gold/40 flex items-center justify-center shrink-0">
                   <Phone className="w-4 h-4 text-nandi-gold" />
                 </div>
                 <div>
                   <span className="text-xs text-nandi-taupe block font-sans">Secondary Phone</span>
                   <a
                     href={`tel:+91${BRAND.secondaryPhone}`}
-                    className="font-sans text-[15px] sm:text-[17px] font-semibold text-nandi-charcoal hover:text-nandi-burgundy transition-colors"
+                    className="font-sans text-[15px] sm:text-[17px] font-bold text-nandi-burgundy hover:text-nandi-deep-maroon transition-colors"
                   >
                     +91 {BRAND.secondaryPhone}
                   </a>
@@ -83,14 +83,14 @@ export default function ContactSection() {
 
               {/* Email */}
               <div className="flex items-center gap-3.5">
-                <div className="w-10 h-10 rounded-full bg-nandi-ivory border border-nandi-gold/30 flex items-center justify-center shrink-0">
+                <div className="w-10 h-10 rounded-full bg-nandi-ivory-light border border-nandi-gold/40 flex items-center justify-center shrink-0">
                   <Mail className="w-4 h-4 text-nandi-gold" />
                 </div>
                 <div>
                   <span className="text-xs text-nandi-taupe block font-sans">Official Email</span>
                   <a
                     href={`mailto:${BRAND.email}`}
-                    className="font-sans text-[15px] sm:text-[16px] text-nandi-charcoal hover:text-nandi-burgundy transition-colors break-all"
+                    className="font-sans text-[15px] sm:text-[16px] text-nandi-charcoal hover:text-nandi-burgundy transition-colors break-all font-medium"
                   >
                     {BRAND.email}
                   </a>
@@ -99,7 +99,7 @@ export default function ContactSection() {
 
               {/* Instagram */}
               <div className="flex items-center gap-3.5">
-                <div className="w-10 h-10 rounded-full bg-nandi-ivory border border-nandi-gold/30 flex items-center justify-center shrink-0">
+                <div className="w-10 h-10 rounded-full bg-nandi-ivory-light border border-nandi-gold/40 flex items-center justify-center shrink-0">
                   <Instagram className="w-4 h-4 text-nandi-gold" />
                 </div>
                 <div>
@@ -108,7 +108,7 @@ export default function ContactSection() {
                     href={BRAND.instagramUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="font-sans text-[15px] sm:text-[16px] font-semibold text-nandi-charcoal hover:text-nandi-burgundy transition-colors"
+                    className="font-sans text-[15px] sm:text-[16px] font-bold text-nandi-burgundy hover:text-nandi-deep-maroon transition-colors"
                   >
                     {BRAND.instagram}
                   </a>
@@ -117,9 +117,9 @@ export default function ContactSection() {
             </div>
           </div>
 
-          {/* Right Column: Instant Action Card */}
-          <div className="lg:col-span-5 flex flex-col justify-center bg-nandi-ivory p-6 sm:p-8 md:p-10 border border-nandi-gold/30 rounded-[2px]">
-            <h3 className="font-serif text-[22px] sm:text-[24px] font-bold text-nandi-charcoal mb-2 sm:mb-3">
+          {/* Right Column: Instant Action Card - Ivory card with subtle gold border */}
+          <div className="lg:col-span-5 flex flex-col justify-center bg-nandi-ivory-light p-6 sm:p-8 md:p-10 border border-nandi-gold/50 rounded-[4px] shadow-sm">
+            <h3 className="font-serif text-[22px] sm:text-[24px] font-bold text-nandi-burgundy mb-2 sm:mb-3">
               Direct Contact
             </h3>
             <p className="font-sans text-[13px] sm:text-[14px] text-nandi-taupe leading-relaxed mb-6 sm:mb-8">
@@ -127,27 +127,28 @@ export default function ContactSection() {
               and specific culinary preferences.
             </p>
 
+            {/* Buttons: Antique Gold with Dark Burgundy Text */}
             <div className="space-y-3.5 sm:space-y-4">
               <a
                 href={whatsappUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full flex items-center justify-center gap-3 bg-nandi-burgundy hover:bg-nandi-deep-burgundy text-white py-3.5 sm:py-4 px-6 rounded-[4px] font-sans text-[15px] sm:text-[16px] font-semibold tracking-[0.5px] transition-all duration-300 shadow-nandi-burgundy hover:scale-[1.02] min-h-[48px]"
+                className="w-full flex items-center justify-center gap-3 bg-nandi-gold hover:bg-nandi-gold-light text-nandi-burgundy py-3.5 sm:py-4 px-6 rounded-[4px] font-sans text-[15px] sm:text-[16px] font-bold tracking-[0.5px] transition-all duration-300 shadow-nandi-gold hover:scale-[1.02] min-h-[48px]"
               >
-                <MessageCircle className="w-5 h-5 fill-white/10" />
+                <MessageCircle className="w-5 h-5 fill-nandi-burgundy/20" />
                 <span>WhatsApp Us</span>
               </a>
 
               <a
                 href={`tel:+91${BRAND.primaryPhone}`}
-                className="w-full flex items-center justify-center gap-2.5 bg-transparent hover:bg-white border-2 border-nandi-burgundy text-nandi-burgundy py-3 sm:py-3.5 px-6 rounded-[4px] font-sans text-[15px] sm:text-[16px] font-semibold tracking-[0.5px] transition-all duration-300 min-h-[48px]"
+                className="w-full flex items-center justify-center gap-2.5 bg-transparent hover:bg-nandi-ivory border-2 border-nandi-burgundy text-nandi-burgundy py-3 sm:py-3.5 px-6 rounded-[4px] font-sans text-[15px] sm:text-[16px] font-bold tracking-[0.5px] transition-all duration-300 min-h-[48px]"
               >
                 <Phone className="w-4 h-4 text-nandi-burgundy" />
                 <span>Call Now: {BRAND.primaryPhone}</span>
               </a>
             </div>
 
-            <div className="mt-5 sm:mt-6 pt-5 sm:pt-6 border-t border-nandi-gold/20 text-center">
+            <div className="mt-5 sm:mt-6 pt-5 sm:pt-6 border-t border-nandi-gold/25 text-center">
               <p className="font-sans text-[11px] sm:text-xs text-nandi-taupe">
                 Available 7 days a week for event consultations &amp; tasting appointments.
               </p>
